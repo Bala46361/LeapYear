@@ -1,12 +1,13 @@
 package com.bnpp.kata;
 
 public class LeapYear {
+	private static final int HUNDRED = 100;
 	private static final int FOUR = 4;
 	private static final int ZERO = 0;
 	private int year;
 
 	public boolean isLeapYear() {
-		return year % FOUR == ZERO && year % 100 != 0;
+		return year % FOUR == ZERO && year % HUNDRED != ZERO;
 	}
 
 	public void setYear(int year) {
