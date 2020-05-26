@@ -7,7 +7,7 @@ public class LeapYear {
 	private int year;
 
 	public boolean isLeapYear() {
-		return year % FOUR == ZERO && year % HUNDRED != ZERO;
+		return (year % FOUR == ZERO && year % HUNDRED != ZERO) || year % 400 == 0;
 	}
 
 	public void setYear(int year) {

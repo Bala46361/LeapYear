@@ -36,4 +36,11 @@ public class LeapYearTest {
 		assertFalse(leapYear.isLeapYear());
 	}
 
+	@Test
+	public void shouldReturnTrueWhenAnyYearisDivisibleBy400() {
+		leapYear.setYear(2000);
+
+		assertTrue(leapYear.isLeapYear());
+	}
+
 }
