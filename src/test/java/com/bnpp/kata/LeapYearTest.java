@@ -9,7 +9,8 @@ public class LeapYearTest {
 	@Test
 	public void shouldReturnTrueWhenYear1996IsPassedAsInput() {
 		LeapYear leapYear = new LeapYear();
-		assertTrue(leapYear.isLeapYear(1996));
+		leapYear.setYear(1996);
+		assertTrue(leapYear.isLeapYear());
 	}
 
 }
