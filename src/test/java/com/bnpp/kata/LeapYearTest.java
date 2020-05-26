@@ -1,5 +1,6 @@
 package com.bnpp.kata;
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Before;
@@ -26,6 +27,13 @@ public class LeapYearTest {
 		leapYear.setYear(1992);
 
 		assertTrue(leapYear.isLeapYear());
+	}
+
+	@Test
+	public void shouldReturnFalseWhenAnyYearDivisibleByBoth4And100() {
+		leapYear.setYear(1700);
+
+		assertFalse(leapYear.isLeapYear());
 	}
 
 }

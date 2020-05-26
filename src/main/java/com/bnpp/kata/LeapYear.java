@@ -6,7 +6,7 @@ public class LeapYear {
 	private int year;
 
 	public boolean isLeapYear() {
-		return year % FOUR == ZERO;
+		return year % FOUR == ZERO && year % 100 != 0;
 	}
 
 	public void setYear(int year) {
